@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>krugc</title>
+        <link rel="stylesheet" href="//felixangell.com/main.css" type="text/css"/>
+    </head>
+
+    <body>
+        <h1>krug CaaS</h1>
+        <p>
+            Krug is a Compiler-as-a-Service programming language. The source code
+            for the project can be found <a href="//github.com/krug-lang/krugc-api">here</a>.
+        </p>
+
+        <h2>Give it a go</h2>
+        <p>
+            This server is hosting an instance of the krug CaaS. Feel free to give it
+            a go at home:
+        </p>
+        <code>$ go get github.com/krug-lang/krugc
+$ cd krugc
+$ go build
+$ ./krugc tests/some_krug_file.krug --server krugc-api.felixangell.com:8080
+        </code>
+        <p>
+            Or optionally, you could clone the server and run it locally. The 'krugc'
+            driver will run locally by default:
+        </p>
+        <code>$ go get github.com/krug-lang/krugc-api
+$ cd krugc-api
+$ go build
+$ ./krugc-api
+        </code>
+    </body>
+
+</html>
