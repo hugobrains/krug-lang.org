@@ -7,31 +7,70 @@
     </head>
 
     <body>
-        <h1>krug CaaS</h1>
+        <h1>Krug Programming Language</h1>
         <p>
-            Krug is a Compiler-as-a-Service programming language. The source code
-            for the project can be found <a href="//github.com/krug-lang/krugc-api">here</a>.
+            Krug is a programming language for systems programming. The compiler
+            is a compiler-as-a-service, which means that the compilers runs as
+            a server. Each compilation phase is cut up into an API route which
+            can be invoked from a client. 
         </p>
 
-        <h2>Give it a go</h2>
+        <h2>Try Krug</h2>
         <p>
-            There is a server (<code>api.krug-lang.org:8080</code>) hosting an instance of the krug CaaS. Feel free to give it
-            a go at home:
+            The language is a work in progress. Nothing works yet, and the language/compiler
+            is far from stability. You can still try and get a krug program to compile:
         </p>
-        <pre>$ go get github.com/krug-lang/krugc
-$ cd krugc
-$ go build
-$ ./krugc -server="api.krug-lang.org.com:8080" tests/hello_world.krug
-        </pre>
+        <h3>krug</h3>
         <p>
-            Or optionally, you could clone the server and run it locally. The 'krugc'
-            driver will run locally by default:
+            Krug offers a few choices in frontend, the (soon to be) standard frontend
+            being 'krug', a frontend that is implemented in JavaScript.
         </p>
-        <pre>$ go get github.com/krug-lang/krugc-api
-$ cd krugc-api
-$ go build
-$ ./krugc-api
-        </pre>
+        <p>
+            krug-js was chosen to be the main frontend due to its availability. You will
+            need a few things to get started:
+        </p>
+        <p>
+            <ul>
+                <li>yarn</li>
+                <li>node</li>
+                <li>krug-serv</li>
+            </ul>
+        </p>
+        <p>
+            First, ensure that an instance of 'krug-serv' is running locally on your machine. It must
+            should be running, by default, on port 8001. Take a look at the <a href='//github.com/hugobrains/krug-serv'>krug-serv repository</a>
+            to find out more.
+        </p>
+        <p><pre>yarn add global krug
+krug hello_world.krug</pre>
+        </p>
+        <p>
+            Additionally, there is a frontend that is written in Go. This was the initial
+            frontend, though krug was later made the standard frontend due to its
+            easy adoption. If you want to use the Go version of the krug frontend, 
+            there are further instructions on the <a href='//github.com/hugobrains/krug-go'>krug repository</a>, 
+            though it is not as actively maintained as krug at this time.
+        </p>
+
+        <h2>Goals</h2>
+        <p>
+            There are many goals for this project, here are some that are not so obvious:
+        </p>
+        <p>
+            <ul>
+                <li>
+                    Setup a server to run a compiler instance for demoing the frontend(s). This would
+                    be running at 'serv.krug-lang.org'.
+                </li>
+                <li>
+                    Have a compiler frontend written in Krug very early on in the development of the
+                    compiler.
+                </li>
+                <li>
+                    Potentially support LLVM as the (core) code generation framework for the compiler.
+                </li>
+            </ul>
+        </p>
     </body>
 
 </html>
