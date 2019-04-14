@@ -2,84 +2,85 @@
 <html>
 
     <head>
-        <title>krug-lang.org</title>
+        <title>Krug Programming Language</title>
         <link rel="stylesheet" href="main.css" type="text/css"/>
     </head>
 
     <body>
-        <header>
-        </header>
+        <div class="line"></div>
 
         <main>
-            <h1>Krug Programming Language</h1>
-            <p>
-                Krug is a programming language for systems programming. The compiler
-                is a compiler-as-a-service, which means that the compilers runs as
-                a server. Each compilation phase is cut up into an API route which
-                can be invoked from a client. 
-            </p>
+            <header>
+                <div class="flex flex-row">
+                    <div class="logo-container flex-20">
+                        <img src="logo-render.png"/>
+                    </div>
+                    <div class="flex flex-row flex-80 bucket-container">
+                        <section class="link-bucket">
+                            <h2>Resources</h2>
+                            <ul>
+                                <li><a href='//caasper.cloud'>caasper.cloud</a></li>
+                                <li><a href='//www.npmjs.com/package/krug'>Krug Package</a></li>
+                                <li><a href='//github.com/hugobrains/krug-lang-docs'>Documentation</a></li>
+                            </ul>
+                        </section>
+                        <section class="link-bucket">
+                            <h2>Community</h2>
+                            <ul>
+                                <li><a href='//github.com/hugobrains/caasper'>GitHub</a></li>
+                                <li><a href='//reddit.com/r/kruglang'>Reddit</a></li>
+                                <li>#krug-lang on freenode</li>
+                            </ul>
+                        </section>
+                        <section class="link-bucket">
+                            <h2>Misc</h2>
+                            <ul>
+                                <li><a href='//github.com/hugobrains/caasper/blob/master/LICENSE'>License</a></li>
+                                <li><a href='//twitter.com/felix_angell'>Dev Twitter</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </header>
 
-            <h2>Try Krug</h2>
-            <p>
-                The language is a work in progress. Nothing works yet, and the language/compiler
-                is far from stable. You can still try and get a krug program to compile.
-            </p>
-            <h3>Using the JS frontend</h3>
-            <p>
-                Krug offers a few choices in frontend, the standard frontend
-                being 'krug', a frontend that is implemented in JavaScript.
-            </p>
-            <p>
-                JavaScript was chosen to be the main frontend due to its availability. You will
-                need a few things to get started:
-            </p>
-            <p>
-                <ul>
-                    <li>yarn (or npm)</li>
-                    <li>node</li>
-                    <li>caasper</li>
-                </ul>
-            </p>
-            <p>
-                First, ensure that an instance of <a href='//caasper.cloud'>caasper</a> is running locally on your machine. It 
-                should be running, by default, on port 8001.
-            </p>
-            <p>
-                'Caasper' is the compiler for Krug. You can learn more about it on the <a href='//caasper.cloud'>caasper.cloud</a>
-                website.
-            </p>
-            <p><pre>yarn add global krug
-krug hello_world.krug</pre>
-            </p>
+            <div class="content">
+                <div class="flex flex-row">
+                    <div class="about container flex-60">
+                        <p>
+                            <strong>Krug</strong> is a programming language for systems programming. The compiler
+                            is a compiler-as-a-service, which means that the compilers runs as
+                            a server. Each compilation phase is cut up into an API route which
+                            can be invoked from a client. 
+                        </p>
+                    </div>
+                    <div class="downloads container flex-40">
+                        <a href='//github.com/hugobrains/caasper/releases' class="btn">Releases</a>
+                        <a href='#' class="btn disabled">Installer</a>
+                    </div>
+                </div>
 
-            <h3>krug-go</h3>
-            <p>
-                Additionally, there is a frontend that is written in Go. This was the initial
-                frontend, though krug was later made the standard frontend due to its
-                easy adoption. If you want to use the Go version of the krug frontend, 
-                there are further instructions on the <a href='//github.com/hugobrains/krug-go'>krug repository</a>, 
-                though it is not as actively maintained as krug at this time.
-            </p>
-
-            <h2>Goals</h2>
-            <p>
-                There are many goals for this project, here are some that are not so obvious:
-            </p>
-            <p>
-                <ul>
-                    <li>
-                        Setup a server to run a compiler instance for demoing the frontend(s). This would
-                        be running at 'serv.krug-lang.org'.
-                    </li>
-                    <li>
-                        Have a compiler frontend written in Krug very early on in the development of the
-                        compiler.
-                    </li>
-                    <li>
-                        Potentially support LLVM as the (core) code generation framework for the compiler.
-                    </li>
-                </ul>
-            </p>
+                <div class="flex flex-row">
+                    <div class="features container flex-40">
+                        <h3>Features:</h3>
+                        <ul>
+                            <li>Fast</li>
+                            <li>Statically Typed</li>
+                            <li>Optional garbage collection</li>
+                            <li>Type inference</li>
+                            <li>Minimal runtime</li>
+                            <li>Native Language Server</li>
+                            <li>No nonsense</li>
+                        </ul>
+                    </div>
+                    <div class="example container flex-60">
+                        <h3>Demo</h3>
+                        <pre class="code-example">fn main() int {
+    printf("Hello, World!\n");
+    return 0;
+}</pre>
+                    </div>
+                </div>
+            </div>
         </main>
     </body>
 
