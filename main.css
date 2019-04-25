@@ -1,4 +1,12 @@
 /* Written by http://bettermotherfuckingwebsite.com/ */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+
 body {
     line-height: 1.6;
     font-size: 18px;
@@ -142,4 +150,81 @@ blockquote:before {
 
 blockquote p {
     display: inline;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .logo-container {
+        width: 35%;
+        align-self: center;
+    }
+
+    .bucket-container {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .content .flex-row {
+        flex-direction: column;
+    }
+
+    .downloads.container,
+    .example.container,
+    .about.container,
+    .features.container {
+        width: 100%;
+    }
+
+    .link-bucket {
+        width: 100%;
+    }
+
+    .about p {
+        margin-top: 0;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .logo-container {
+        width: 35%;
+        align-self: center;
+    }
+
+    .bucket-container {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .content .flex-row {
+        flex-direction: column;
+    }
+
+    .downloads.container,
+    .example.container,
+    .about.container,
+    .features.container {
+        width: 100%;
+    }
+
+    .link-bucket {
+        width: 100%;
+    }
+
+    .about p {
+        margin-top: 0;
+    }
 }
