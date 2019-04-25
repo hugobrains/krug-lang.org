@@ -190,6 +190,41 @@ and (orientation : portrait) {
     }
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .logo-container {
+        width: 35%;
+        align-self: center;
+    }
+
+    .bucket-container {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .content .flex-row {
+        flex-direction: column;
+    }
+
+    .downloads.container,
+    .example.container,
+    .about.container,
+    .features.container {
+        width: 100%;
+    }
+
+    .link-bucket {
+        width: 100%;
+    }
+
+    .about p {
+        margin-top: 0;
+    }
+}
+
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px) 
