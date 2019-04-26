@@ -6,6 +6,9 @@ html {
     box-sizing: inherit;
 }
   
+:root {
+    --green: #82d0a0;   
+}
 
 body {
     line-height: 1.6;
@@ -16,10 +19,25 @@ body {
     font-family: 'Helvetica Neue';
 }
 
+pre {
+    background: #f5f5f5;
+    padding: 1em;
+    margin: 0;
+    border-radius: 8px;
+}
+
 main {
     padding: 0.5em;
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
+}
+
+footer {
+    background: #f5f5f5;
+    padding: 1em;
+}
+footer p {
+    margin: 0;
 }
 
 .container {
@@ -36,6 +54,7 @@ main {
 
 .flex-column {
     flex-direction: column;
+    padding: 0 1em;
 }
 
 .flex-20 {
@@ -47,6 +66,9 @@ main {
 .flex-40 {
     width: 40%;
 }
+.flex-50 {
+    width: 50%;
+}
 .flex-60 {
     width: 60%;
 }
@@ -55,6 +77,9 @@ main {
 }
 .flex-80 {
     width: 80%;
+}
+.flex-100 {
+    width: 100%;
 }
 
 .about {
@@ -65,9 +90,17 @@ main {
     justify-content: center;
 }
 
+.strike {
+    text-decoration: line-through;
+}
+.asterisks {
+    color: red;
+    font-size: 18pt;
+}
+
 .btn {
     display: block;
-    background:#82d0a0;
+    background:var(--green);
     padding: 0.45em;
     color: #fff;
     text-decoration: none;
@@ -79,7 +112,7 @@ main {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .disabled {
-    background: #82d0a0;
+    background: var(--green);
     cursor: not-allowed;
 }
 
@@ -121,7 +154,7 @@ main {
 .line {
     display: block;
     width: 100%;
-    background: #82d0a0;
+    background: var(--green);
     height: 0.5em;
 }
 
@@ -130,7 +163,10 @@ h1, h2, h3 {
 }
 
 a {
-    color: #444;
+    color: var(--green);
+}
+.link-bucket a {
+    text-decoration: none;
 }
 
 blockquote {
@@ -170,6 +206,21 @@ and (orientation : portrait) {
         padding: 1em;
     }
 
+    .flex-column {
+        padding: 0;
+    }
+
+    .flex-20,
+    .flex-30,
+    .flex-40,
+    .flex-50,
+    .flex-60,
+    .flex-70,
+    .flex-80,
+    .flex-100 {
+        width: 100%;
+    }
+
     .content .flex-row {
         flex-direction: column;
     }
@@ -198,6 +249,21 @@ and (orientation : portrait) {
     .logo-container {
         width: 35%;
         align-self: center;
+    }
+
+    .flex-20,
+    .flex-30,
+    .flex-40,
+    .flex-50,
+    .flex-60,
+    .flex-70,
+    .flex-80,
+    .flex-100 {
+        width: 100%;
+    }
+
+    .flex-column {
+        padding: 0;
     }
 
     .bucket-container {
@@ -239,9 +305,24 @@ and (orientation : portrait) {
         align-self: center;
     }
 
+    .flex-20,
+    .flex-30,
+    .flex-40,
+    .flex-50,
+    .flex-60,
+    .flex-70,
+    .flex-80,
+    .flex-100 {
+        width: 100%;
+    }
+
     .bucket-container {
         flex-direction: column;
         padding: 1em;
+    }
+
+    .flex-column {
+        padding: 0;
     }
 
     .content .flex-row {
