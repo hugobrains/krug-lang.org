@@ -130,6 +130,7 @@ footer p {
     min-width: 25%;
 }
 .link-bucket h2 {
+    margin-top: 0;
     font-size: 16pt;
 }
 .link-bucket ul {
@@ -197,8 +198,8 @@ and (orientation : portrait) {
     }
     
     .logo-container {
-        width: 35%;
-        align-self: center;
+        display: none;
+        width: 0;
     }
 
     .bucket-container {
@@ -247,8 +248,8 @@ and (orientation : portrait) {
     }
     
     .logo-container {
-        width: 35%;
-        align-self: center;
+        display: none;
+        width: 0;
     }
 
     .flex-20,
@@ -301,8 +302,8 @@ and (orientation : portrait) {
     }
     
     .logo-container {
-        width: 35%;
-        align-self: center;
+        display: none;
+        width: 0;
     }
 
     .flex-20,
