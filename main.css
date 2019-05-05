@@ -346,3 +346,7 @@ and (orientation : portrait) {
         margin-top: 0;
     }
 }
+
+.strong {
+    font-weight: bold;
+}
