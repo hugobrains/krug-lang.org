@@ -99,9 +99,9 @@
                                 That being said, there is still a vision to create a polished ecosystem around Krug:
                             </p>
                             <ul>
-                                <li><span class="strong">Support LLVM</span> as the primary target for code generation. Right now it's C to lay the grounds for a prototype: features first - consider LLVM an optimisation,</li>
-                                <li><span class="strong">Solid documentation/resources</span> for programmers and non-programmers, in addition to clear, concise, and queryable error messages</li>
-                                <li><span class="strong">CaaS and <a href='https://langserver.org/'>LSP</a></span> should work well together out of the box to ease development for tool creators</li>
+                                <li><span class="strong">Support LLVM</span> as the primary target for code generation. Right now it's C to lay the grounds for a prototype: features first - consider LLVM an optimisation;</li>
+                                <li><span class="strong">Solid documentation/resources</span> for programmers and non-programmers, this includes clear, concise, and queryable error messages;</li>
+                                <li><span class="strong">CaaS and <a href='https://langserver.org/'>LSP</a></span> should work well together out of the box to ease development for tool creators;</li>
                                 <li><span class="strong">Choice</span> of garbage collection, manual memory management, reference counting, AND (weak) ownership.</li>
                             </ul>
                             <p>
@@ -162,7 +162,11 @@
                         <div class="flex-column">
                             <p>
                                 <span class="asterisks">*</span>As of writing this, there are no other clients that
-                                are kept as up to date as the JavaScript client. So for now you are stuck with JS speeds. Sorry!
+                                are kept as up to date as the JavaScript client. So for now you are stuck with JS performance.<span class="asterisks">**</span> Sorry!
+                            </p>
+                            <p>
+                                <span class="asterisks">**</span>In fact, the first implementation of the client was in Go. The performance
+                                was much faster.
                             </p>
                         </div>
 
