@@ -1,196 +1,201 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Krug Programming Language</title>
-        <link rel="stylesheet" href="main.css" type="text/css"/>
-    </head>
+<head>
+  <title>Krug Programming Language</title>
+  <link rel="stylesheet" href="main.css" type="text/css" />
+</head>
 
-    <body>
-        <div class="line"></div>
+<body>
+  <div class="line"></div>
 
-        <main>
-            <header>
-                <div class="flex flex-column">
-                    <div class="header-container flex flex-row">
-                        <div class="logo-container flex-20">
-                            <img src="logo-render.png"/>
-                        </div>
-                        <div class="flex flex-row flex-80 bucket-container">
-                            <section class="link-bucket">
-                                <h2>Resources</h2>
-                                <ul>
-                                    <li><a href='//caasper.cloud'>caasper.cloud</a></li>
-                                    <li><a href='//www.npmjs.com/package/krug'>Krug Package</a></li>
-                                    <li><a href='//github.com/krug-lang/krug-lang-docs'>Documentation</a></li>
-                                </ul>
-                            </section>
-                            <section class="link-bucket">
-                                <h2>Community</h2>
-                                <ul>
-                                    <li><a href='//github.com/krug-lang/caasper'>GitHub</a></li>
-                                    <li><a href='//reddit.com/r/kruglang'>Reddit</a></li>
-                                    <li>#krug-lang on freenode</li>
-                                </ul>
-                            </section>
-                            <section class="link-bucket">
-                                <h2>Misc</h2>
-                                <ul>
-                                    <li><a href='//github.com/krug-lang/caasper/blob/master/LICENSE'>License</a></li>
-                                    <li><a href='//twitter.com/felix_angell'>Dev Twitter</a></li>
-                                </ul>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </header>
+  <main>
+    <header>
+      <div class="flex flex-column">
+        <div class="header-container flex flex-row">
+          <div class="logo-container flex-20">
+            <img src="logo-render.png" />
+          </div>
+          <div class="flex flex-row flex-80 bucket-container">
+            <section class="link-bucket">
+              <h2>Resources</h2>
+              <ul>
+                <li><a href='//caasper.cloud'>caasper.cloud</a></li>
+                <li><a href='//www.npmjs.com/package/krug'>Krug Package</a></li>
+                <li><a href='//github.com/krug-lang/krug-lang-docs'>Documentation</a></li>
+              </ul>
+            </section>
+            <section class="link-bucket">
+              <h2>Community</h2>
+              <ul>
+                <li><a href='//github.com/krug-lang/caasper'>GitHub</a></li>
+                <li><a href='//reddit.com/r/kruglang'>Reddit</a></li>
+                <li>#krug-lang on freenode</li>
+              </ul>
+            </section>
+            <section class="link-bucket">
+              <h2>Misc</h2>
+              <ul>
+                <li><a href='//github.com/krug-lang/caasper/blob/master/LICENSE'>License</a></li>
+                <li><a href='//twitter.com/felix_angell'>Dev Twitter</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </header>
 
-            <div class="content">
-                <div class="flex-column">
-                    <div class="flex flex-row">
-                        <div class="about container flex-60">
-                            <p>
-                                <strong>Krug</strong> is a programming language for systems programming. The compiler
-                                is a compiler-as-a-service, which means that the compilers runs as
-                                a server. Each compilation phase is cut up into an API route which
-                                can be invoked from a client. 
-                            </p>
-                        </div>
-                        <div class="downloads container flex-40">
-                            <a href='//github.com/krug-lang/caasper/releases' class="btn">Releases</a>
-                            <a href='#' class="btn disabled">Installer</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="content">
+      <div class="flex-column">
+        <div class="flex flex-row">
+          <div class="about container flex-60">
+            <p>
+              <strong>Krug</strong> is a programming language for systems programming. The compiler
+              is a compiler-as-a-service, which means that the compilers runs as
+              a server. Each compilation phase is cut up into an API route which
+              can be invoked from a client.
+            </p>
+          </div>
+          <div class="downloads container flex-40">
+            <a href='//github.com/krug-lang/caasper/releases' class="btn">Releases</a>
+            <a href='#' class="btn disabled">Installer</a>
+          </div>
+        </div>
+      </div>
 
-                <div class="flex-column">
-                    <div class="flex flex-row">
-                        <div class="features container flex-40">
-                            <h3>Features:</h3>
-                            <ul>
-                                <li>Fast</li>
-                                <li>Statically Typed</li>
-                                <li>Optional garbage collection</li>
-                                <li>Type inference</li>
-                                <li>Minimal runtime</li>
-                                <li>Native Language Server</li>
-                            </ul>
-                        </div>
-                        <div class="example container flex-60">
-                            <h3>Demo</h3>
-                            <div class="video flex flex-100">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/DT6l4T7yzKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex-column">
-                    <div class="flex flex-row">
-                        <div class="goals container">
-                            <h2>Goals</h2>
-                            <p>
-                                The goal of Krug is nothing fancy: make another language that people might want to use. Krug in itself
-                                is an experiment to see how the architecture of a 'compiler as a serivce' works in a 'real world' scenario.
-                            </p>
-                            
-                            <h3>The Vision</h3>
-                            <p>
-                                That being said, there is still a vision to create a polished ecosystem around Krug:
-                            </p>
-                            <ul>
-                                <li><span class="strong">Support LLVM</span> as the primary target for code generation. Right now it's C to lay the grounds for a prototype: features first - consider LLVM an optimisation;</li>
-                                <li><span class="strong">Solid documentation/resources</span> for programmers and non-programmers, this includes clear, concise, and queryable error messages;</li>
-                                <li><span class="strong">CaaS and <a href='https://langserver.org/'>LSP</a></span> should work well together out of the box to ease development for tool creators;</li>
-                                <li><span class="strong">Choice</span> of garbage collection, manual memory management, reference counting, AND (weak) ownership.</li>
-                            </ul>
-                            <p>
-                                These are just a few of the goals for Krug. There are many more ranging from a bytecode backend, to a package manager, linter tooling (fmt, etc), and so on.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex">
-                    <div class="container">
-                        <div class="flex-column">
-                            <h2>Tooling</h2>
-                            <p>
-                                Due to the architecture of Krug, there is a lot of choice
-                                for tooling and how you compile your code. Because of this,
-                                the section below aims to compile and summarize most of the
-                                tools available and where you can find them.
-                            </p>
-                        </div>
-
-                        <div class="flex flex-row flex-100">
-                            <div class="flex flex-column flex-50">
-                                <h3>Krug (Client) &mdash; <a href='//github.com/krug-lang/krug'>GitHub</a></h3>
-                                <p>
-                                    Krug is <em>one of</em> the official client implementations. It
-                                    is implemented in JavaScript, and is generally a good choice for
-                                    small Krug programs or hobby programmers.
-                                </p>
-                                <p>
-                                    <span class="strike">If you were to write some larger programs, it is recommended that
-                                    you use an alternative client, as they are typically faster.</span><span class="asterisks">*</span>
-                                </p>
-                                <p>
-                                    Additionally, there are a few configurations you can make, such as
-                                    passing the <code>--sendpaths</code> flag, to avoid sending large
-                                    packets of information back and forth from the client to the server.
-                                </p>
-                            </div>
-    
-                            <div class="flex flex-column flex-50">
-                                <h3>Caasper (Server) &mdash; <a href='//github.com/krug-lang/caasper'>GitHub</a>, <a href='//caasper.cloud'>Website</a></h3>
-                                <p>
-                                    Caasper is the compiler itself for the Krug programming language. This
-                                    is a requirement for programming in Krug. You could either run this
-                                    locally on your computer, or you could host this on your home server,
-                                    or on a DigitalOcean droplet, or wherever you choose to.
-                                </p>
-                                <p>
-                                    There are downsides to this, the #1 being the latency from you
-                                    to where Caasper is hosted. If running locally, it is a good
-                                    idea to specify the <code>--sendpaths</code> flag to your client
-                                    so that you aren't sending files over the network.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex-column">
-                            <p>
-                                <span class="asterisks">*</span>As of writing this, there are no other clients that
-                                are kept as up to date as the JavaScript client. So for now you are stuck with JS performance.<span class="asterisks">**</span> Sorry!
-                            </p>
-                            <p>
-                                <span class="asterisks">**</span>In fact, the first implementation of the client was in Go. The performance
-                                was much faster.
-                            </p>
-                        </div>
-
-                        <div class="flex-column">
-                            <h3>Kruggle (Server+Client) &mdash; <a href='//github.com/krug-lang/kruggle'>GitHub</a></h3>
-                            <p>
-                                Kruggle is a server &amp; client, where both the compiler
-                                and a fast client are provided to get programming out of the box.
-                            </p>
-                            <p>
-                                It is worth specifying that Kruggle is not its own project. It
-                                is a 'driver' that will launch an instance of the server in the
-                                background as well as pass the given input files onto the client.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="flex-column">
+        <div class="flex flex-row">
+          <div class="features container flex-40">
+            <h3>Features:</h3>
+            <ul>
+              <li>Fast</li>
+              <li>Statically Typed</li>
+              <li>Optional garbage collection</li>
+              <li>Type inference</li>
+              <li>Minimal runtime</li>
+              <li>Native Language Server</li>
+            </ul>
+          </div>
+          <div class="example container flex-60">
+            <h3>Demo</h3>
+            <div class="video flex flex-100">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/DT6l4T7yzKs" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
-        </main>
+          </div>
+        </div>
+      </div>
 
-        <footer>
-            <p>Copyright &copy; 2019 - The Krug Authors.</p>
-            <p>All Rights Reserved.</p>
-        </footer>
-    </body>
+      <div class="flex-column">
+        <div class="flex flex-row">
+          <div class="goals container">
+            <h2>Goals</h2>
+            <p>
+              The goal of Krug is nothing fancy: make another language that people might want to use. Krug in itself
+              is an experiment to see how the architecture of a 'compiler as a serivce' works in a 'real world'
+              scenario.
+            </p>
+
+            <h3>The Vision</h3>
+            <p>
+              That being said, there is still a vision to create a polished ecosystem around Krug:
+            </p>
+            <ul>
+              <li><span class="strong">Support LLVM</span> as the primary target for code generation. Right now it's C
+                to lay the grounds for a prototype: features first - consider LLVM an optimisation;</li>
+              <li><span class="strong">Solid documentation/resources</span> for programmers and non-programmers, this
+                includes clear, concise, and queryable error messages;</li>
+              <li><span class="strong">CaaS and <a href='https://langserver.org/'>LSP</a></span> should work well
+                together out of the box to ease development for tool creators;</li>
+              <li><span class="strong">Choice</span> of garbage collection, manual memory management, reference
+                counting, AND (weak) ownership.</li>
+            </ul>
+            <p>
+              These are just a few of the goals for Krug. There are many more ranging from a bytecode backend, to a
+              package manager, linter tooling (fmt, etc), and so on.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="container">
+          <div class="flex-column">
+            <h2>Tooling</h2>
+            <p>
+              Due to the architecture of Krug, there is a lot of choice
+              for tooling and how you compile your code. Because of this,
+              the section below aims to compile and summarize most of the
+              tools available and where you can find them.
+            </p>
+          </div>
+
+          <div class="flex flex-row flex-100">
+            <div class="flex flex-column flex-50">
+              <h3>Krug (Client) &mdash; <a href='//github.com/krug-lang/krug'>GitHub</a></h3>
+              <p>
+                Krug is <em>one of</em> the official client implementations. It
+                is implemented in JavaScript, and is generally a good choice for
+                small Krug programs or hobby programmers.
+              </p>
+              <p>
+                <span class="strike">If you were to write some larger programs, it is recommended that
+                  you use an alternative client, as they are typically faster.</span><span class="asterisks">*</span>
+              </p>
+              <p>
+                Additionally, there are a few configurations you can make, such as
+                passing the <code>--sendpaths</code> flag, to avoid sending large
+                packets of information back and forth from the client to the server.
+              </p>
+            </div>
+
+            <div class="flex flex-column flex-50">
+              <h3>Caasper (Server) &mdash; <a href='//github.com/krug-lang/caasper'>GitHub</a>, <a
+                  href='//caasper.cloud'>Website</a></h3>
+              <p>
+                Caasper is the compiler itself for the Krug programming language. This
+                is a requirement for programming in Krug. You could either run this
+                locally on your computer, or you could host this on your home server,
+                or on a DigitalOcean droplet, or wherever you choose to.
+              </p>
+              <p>
+                There are downsides to this, the #1 being the latency from you
+                to where Caasper is hosted. If running locally, it is a good
+                idea to specify the <code>--sendpaths</code> flag to your client
+                so that you aren't sending files over the network.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex-column">
+            <p><small><span class="asterisks">*</span>As of writing this, there are no other clients that are kept as up
+                to date as the JavaScript client. So for now you are stuck with JS performance - sorry!
+                <small>Uninteresting/obvious fact: the first implementation of the client was in Go. The performance was
+                  much faster than the JS client.</small></small></p>
+          </div>
+
+          <div class="flex-column">
+            <h3>Kruggle (Server+Client) &mdash; <a href='//github.com/krug-lang/kruggle'>GitHub</a></h3>
+            <p>
+              Kruggle is a server &amp; client, where both the compiler
+              and a fast client are provided to get programming out of the box.
+            </p>
+            <p>
+              It is worth specifying that Kruggle is not its own project. It
+              is a 'driver' that will launch an instance of the server in the
+              background as well as pass the given input files onto the client.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2019 - The Krug Authors.</p>
+    <p>All Rights Reserved.</p>
+  </footer>
+</body>
 
 </html>
